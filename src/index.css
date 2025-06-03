@@ -1,0 +1,38 @@
+:root {
+
+  --primary-color: #305eff;
+  --accent-color: #f1f5fa;
+  --hover-color: #1f4ffe;
+  --text-color: #333333;
+  --link-color: #2563eb;
+  --background-color: #ffffff;
+  --background-color2: #032a3e;
+  --background-color3: #009e5c;
+  --light-gray: #f0f0f0;
+  --gray: #808080;
+  --dark-gray: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+html ,body{
+  width: 100%;
+  overflow-x: visible;
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+}
+
+.App {
+  width: 100%;
+  overflow-x: visible;
+}

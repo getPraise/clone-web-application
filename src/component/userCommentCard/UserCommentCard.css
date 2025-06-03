@@ -1,0 +1,66 @@
+.userCommentCardContainer {
+  background-color: #1c2431;
+  padding: 1.2rem 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.25);
+  height: 100%;
+}
+
+.userCommentCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.personImage {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nameUsername {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+  color: white;
+}
+
+.username {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #7a8ca5;
+  margin: 0;
+}
+
+.twitterLogo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.commentText {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  flex-grow: 1;
+}
