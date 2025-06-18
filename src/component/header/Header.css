@@ -1,8 +1,9 @@
-
 header {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 0.5rem;
+
 }
 
 #navBar {
@@ -40,11 +41,13 @@ header {
     padding-left: 5px;
     height: 0.8rem;
 }
-.signup-icon{
-  color: #ffffff;     
-  font-size: 1.2rem;  
-  margin-left: 8px;     
+
+.signup-icon {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: 8px;
 }
+
 #logo {
     width: 8rem;
     height: 100%;
@@ -65,10 +68,18 @@ header {
     color: white;
     font-size: 0.9rem;
 }
-#navSignUp:hover, #signUpNowButton:hover,.mainBox02signUpNowButton:hover,#asideBlock02BackgroundBlockButton:hover,.asideblock03signUpNowButtonsmall:hover,.asideblock03signUpNowButton:hover,.asideBlock04Part3signUpNow a button:hover {
+
+#navSignUp:hover,
+#signUpNowButton:hover,
+.mainBox02signUpNowButton:hover,
+#asideBlock02BackgroundBlockButton:hover,
+.asideblock03signUpNowButtonsmall:hover,
+.asideblock03signUpNowButton:hover,
+.asideBlock04Part3signUpNow a button:hover {
     background-color: var(--hover-color);
 }
-#navLogin:hover{
+
+#navLogin:hover {
     background-color: var(--light-gray);
     border: 1.1px solid var(--primary-color);
 
@@ -82,52 +93,68 @@ header {
     background-color: rgb(255, 255, 255);
     font-size: 0.9rem;
 }
-.navItems a:hover{
+
+.navItems a:hover {
     color: var(--primary-color);
 }
-.navItemsBorder a:hover{
-    border-width : 0px 0px  4px 0px ;
+
+.navItemsBorder a:hover {
+    border-width: 0px 0px 4px 0px;
     border-radius: 2px;
     border-color: var(--primary-color);
     color: var(--primary-color);
     border-style: solid;
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding-bottom: 1rem;
 }
+
 /* --------------------------------------------------------------------------------------------------- */
-#slideWrapperHeader{
+#slideWrapperHeader {
     width: 100%;
     overflow: hidden;
-    position: relative; 
+    position: relative;
 
 }
-#slideContainer{
+
+#slideContainer {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 400%;
+    min-width: 1240px;
+    margin: 0 auto;
 }
 
 .slideSection1 {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
     height: 500px;
     padding-top: 7.5rem;
     text-align: left;
 }
-.bkg1{
+
+.bkg1 {
     background-image: url("images/slidingFeatures/slidingFeatures02.avif");
 }
-.bkg2{
+
+.bkg2 {
     background-image: url("images/slidingFeatures/slidingFeatures03.avif");
 }
-.bkg3{
+
+.bkg3 {
     background-image: url("images/slidingFeatures/slidingFeatures01.webp");
 }
-.bkg4{
+
+.bkg4 {
     background-image: url("images/slidingFeatures/slidingFeatures04.avif");
 }
-.bkg1, .bkg2, .bkg3, .bkg4 {
+
+.bkg1,
+.bkg2,
+.bkg3,
+.bkg4 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
@@ -138,11 +165,13 @@ header {
     font-size: 3rem;
     color: var(--primary-color);
     font-weight: 600;
+    display: inline-block;
 }
 
 .slideSectionHeading2 {
     font-size: 3rem;
     font-weight: 700;
+    display: inline-block;
 }
 
 .slideSectionPara {
@@ -174,6 +203,7 @@ header {
 .knowMore a {
     color: var(--primary-color);
 }
+
 .navButton {
     position: absolute;
     top: 49%;
@@ -187,13 +217,19 @@ header {
     font-size: 1.2rem;
     z-index: 10;
 }
-#prevBtn , #asideBlock03prevBtn, #mainBox03prevBtn{
+
+#prevBtn,
+#asideBlock03prevBtn,
+#mainBox03prevBtn {
     left: 10px;
 }
 
-#nextBtn ,#asideBlock03nextBtn, #mainBox03nextBtn{
+#nextBtn,
+#asideBlock03nextBtn,
+#mainBox03nextBtn {
     right: 10px;
 }
+
 #slideSection2 {
     display: flex;
     justify-content: start;
@@ -241,18 +277,25 @@ header {
     animation: move-left 40s linear infinite;
     width: max-content;
 }
+
 .iconCompany {
     filter: grayscale(100%);
-    height: 4rem; /* Set a consistent height */
-    width: auto; /* Keeps the original aspect ratio */
-    max-width: 100px; /* Ensures images don’t stretch too wide */
-    object-fit: contain; /* Keeps entire image visible */
+    height: 4rem;
+    /* Set a consistent height */
+    width: auto;
+    /* Keeps the original aspect ratio */
+    max-width: 100px;
+    /* Ensures images don’t stretch too wide */
+    object-fit: contain;
+    /* Keeps entire image visible */
 }
-.iconCompanyZoom2{
-    transform: scale(2.5,2.5);
+
+.iconCompanyZoom2 {
+    transform: scale(2.5, 2.5);
 }
-.iconCompanyZoom1{
-    transform: scale(1.5,1.5);
+
+.iconCompanyZoom1 {
+    transform: scale(1.5, 1.5);
 }
 
 @keyframes move-left {
@@ -264,9 +307,135 @@ header {
         transform: translateX(-50%);
     }
 }
-#slideSection3:hover{
-    .iconCompany{
+
+#slideSection3:hover {
+    .iconCompany {
         filter: none;
     }
 
+}
+
+
+@media ((max-width:1200px)) {
+    .hide-on-small {
+        display: none;
+    }
+
+    #navUpperHalf {
+        justify-content: start;
+    }
+
+    #navLowerHalf {
+        justify-content: right;
+    }
+
+    .slideSectionHeading1 {
+        font-size: 2.5rem;
+    }
+
+    .slideSectionHeading2 {
+        font-size: 2.5rem;
+    }
+
+    .slideSectionPara {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        font-size: 0.7rem;
+    }
+
+    #slideSection2 {
+        display: none;
+        height: 0;
+        margin-top: 0;
+        gap: 0;
+    }
+}
+
+@media ((max-width:1000px)) {
+    .slideSection1 {
+        height: 400px;
+        padding-top: 2rem;
+    }
+
+    .slideSectionHeading1 {
+        font-size: 2rem;
+    }
+
+    .slideSectionHeading2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .slideSectionHeading1 {
+        font-size: 1.8rem;
+    }
+
+    .slideSectionHeading2 {
+        font-size: 1.8rem;
+    }
+
+
+    .signUpNowButton {
+        padding: 10px 14px;
+        font-size: 0.75rem;
+    }
+
+
+    .knowMore {
+        padding: 10px 14px;
+        font-size: 0.75rem;
+    }
+
+    
+#slideSection3 {
+    height: 5rem;
+    padding: 24px 48px 24px 0px;
+}
+
+#slideSection3scroll {
+    gap: 3rem;
+    animation: move-left 40s linear infinite;
+}
+
+.iconCompany {
+    height: 3rem;
+    width: auto;
+    max-width: 75px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+    .slideSection1 {
+        padding-top: 1rem;
+        height: 350px;
+    }
+    .slideSectionHeading1 {
+        font-size: 1.4rem;
+    }
+
+    .slideSectionHeading2 {
+        font-size: 1.4rem;
+    }
+
+    .slideSectionPara {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    
+    .signUpNowButton {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+
+
+    .knowMore {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
 }

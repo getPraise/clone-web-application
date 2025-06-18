@@ -1,25 +1,28 @@
 :root {
 
-  --primary-color: #305eff;
-  --accent-color: #f1f5fa;
-  --hover-color: #1f4ffe;
-  --text-color: #333333;
-  --link-color: #2563eb;
-  --background-color: #ffffff;
-  --background-color2: #032a3e;
-  --background-color3: #009e5c;
-  --light-gray: #f0f0f0;
-  --gray: #808080;
-  --dark-gray: #555;
+    --primary-color: #305eff;
+    --accent-color: #f1f5fa;
+    --hover-color: #1f4ffe;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --background-color2: #032a3e;
+    --background-color3: #009e5c;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
 }
+
 main {
     background-color: var(--accent-color);
-    height: 235rem;
+    min-height: 235rem;
+    height: auto;
 
 }
+
 .man {
     background-color: var(--accent-color);
-    height: 142rem;
+    height: auto;
 
 }
 
@@ -27,7 +30,7 @@ main {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    height: 22rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -38,7 +41,8 @@ main {
     padding-bottom: 4rem;
 }
 
-.mainBox1heading h1 {
+.mainBox1heading h1,
+.mainBox1heading h2 {
     font-size: 3rem;
     font-weight: 600;
 }
@@ -77,13 +81,13 @@ main {
     color: var(--gray);
 }
 
-#mainBox1cickOption {
+.mainBox1cickOption {
     font-weight: 500;
     color: black;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
-#mainBox02{
+#mainBox02 {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -92,7 +96,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    height: 38rem;
+    height: auto;
     gap: 1.5rem;
     padding-top: 3.8rem;
     margin-bottom: 4rem;
@@ -105,34 +109,39 @@ main {
     align-self: flex-start;
     padding-left: 4rem;
 }
-.mainBox02HeadingAnchor{
-    color:var(--gray)
+
+.mainBox02HeadingAnchor {
+    color: var(--gray)
 }
-.mainBox02HeadingAnchor:hover{
-    color:var(--text-color)
+
+.mainBox02HeadingAnchor:hover {
+    color: var(--text-color)
 }
 
 .mainBox02AnchorPageHolder {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 2rem;
+    gap: 1rem;
     align-self: flex-start;
     padding-left: 4rem;
 }
 
-.mainBox02CardHolder{
+
+.mainBox02CardHolder {
     width: 90%;
-    height: 26rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding-top: 2rem;
 }
-.mainBox06Card.mainBox05Card,.mainBox04Card,.mainBox03Card, .mainBox02Card {
-    width: 24%;
+
+.mainBox06Card.mainBox05Card,
+.mainBox04Card,
+.mainBox03Card,
+.mainBox02Card {
+    width: 100%;
     height: 26rem;
-    border: 1px solid rgba(121, 135, 156, 0.18);
-    box-shadow: rgba(49, 49, 51, 0.1) 0px 2px 16px 0px;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 2px;
@@ -167,6 +176,7 @@ main {
 
 .mainBox02CardBottom2 {
     display: none;
+    gap: 2rem;
 }
 
 .mainBox02signUpNowButton {
@@ -178,22 +188,28 @@ main {
     text-decoration: none;
 }
 
-.mainBox02knowMore{
+.mainBox02knowMore {
     padding: 10px 15px 10px 15px;
 }
-.mainBox02knowMore a{
+
+.mainBox02knowMore a {
     color: var(--primary-color);
     font-size: 0.9rem;
 }
-.mainBox02knowMore a:hover{
-    border-width : 0px 0px  1px 0px ;
+
+.mainBox02knowMore a:hover {
+    border-width: 0px 0px 1px 0px;
     border-radius: 2px;
     border-style: solid;
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding-bottom: 0.1rem;
 }
 
-.mainBox02Card:hover .mainBox02CardDown ,.mainBox03Card:hover .mainBox02CardDown,.mainBox04Card:hover .mainBox02CardDown,.mainBox05Card:hover .mainBox02CardDown ,.mainBox06Card:hover .mainBox02CardDown {
+.mainBox02Card:hover .mainBox02CardDown,
+.mainBox03Card:hover .mainBox02CardDown,
+.mainBox04Card:hover .mainBox02CardDown,
+.mainBox05Card:hover .mainBox02CardDown,
+.mainBox06Card:hover .mainBox02CardDown {
     height: 38%;
     padding-top: 1rem;
 
@@ -203,9 +219,10 @@ main {
         justify-content: center;
     }
 }
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-#mainBox03{
+#mainBox03 {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -213,41 +230,45 @@ main {
     margin-left: auto;
     margin-right: auto;
     background-color: var(--accent-color);
-    height: 40rem;
+    height: auto;
     gap: 1.5rem;
     padding-top: 3.8rem;
     margin-bottom: 4rem;
+    padding: 0 0.5rem;
+
 }
-#mainBox03UpperHalf{
-    
-}
-#mainBox03UpperHalf p{
+
+#mainBox03UpperHalf p {
     color: var(--gray);
     padding-bottom: 1rem;
 }
-#mainBox03UpperHalf h5{
+
+#mainBox03UpperHalf h5 {
     color: #009e5c;
     font-size: 3rem;
     font-weight: 600;
 }
-#mainBox03UpperHalf h6{
+
+#mainBox03UpperHalf h6 {
     font-size: 3rem;
     font-weight: 600;
-
 }
-#mainBox03LowerHalfWrapper{
+
+#mainBox03LowerHalfWrapper {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-#mainBox03LowerHalfslideContainer{
+
+#mainBox03LowerHalfslideContainer {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 1600px;
     padding-top: 2rem;
     gap: 2rem;
 }
-.mainBox03LowerHalfCard{
+
+.mainBox03LowerHalfCard {
     display: flex;
     flex-direction: column;
     max-width: 400px;
@@ -255,58 +276,65 @@ main {
     padding: 2rem;
     border-radius: 8px;
     border-color: rgba(121, 135, 156, 0.09);
-
 }
-.mainBox03LowerHalfCard p{
+
+.mainBox03LowerHalfCard p {
     font-size: 1.1rem;
     font-weight: 500;
     padding-bottom: 1rem;
 }
-.mainBox03LowerHalfCard h5{
+
+.mainBox03LowerHalfCard h5 {
     font-size: 1.5rem;
     font-weight: 600;
     display: inline;
 }
-.mainBox03LowerHalfCard h5 p{
+
+.mainBox03LowerHalfCard h5 p {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
     display: inline;
 }
 
-.mainBox03LowerHalfCardAnchorTags{
+.mainBox03LowerHalfCardAnchorTags {
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 1rem;
     padding-top: 5rem;
 }
-.iconNavArrowMainBox03{
-    color: var(--primary-color);
 
-}
-.mainBox03SingnUp a, .mainBox03KnowMore a{
+.iconNavArrowMainBox03 {
     color: var(--primary-color);
 }
-.mainBox03SingnUp:hover, .mainBox03KnowMore:hover{
-    border-width : 0px 0px  1px 0px ;
+
+.mainBox03SingnUp a,
+.mainBox03KnowMore a {
+    color: var(--primary-color);
+}
+
+.mainBox03SingnUp:hover,
+.mainBox03KnowMore:hover {
+    border-width: 0px 0px 1px 0px;
     border-radius: 2px;
     border-style: solid;
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding-bottom: 0.1rem;
     border-color: var(--primary-color);
-
 }
-#mainBox04Container{
+
+/* ----------------------------------------------------------------------------------------------------- */
+#mainBox04Container {
     width: 100%;
     background-color: white;
 }
 
-#mainBox04{
+#mainBox04 {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    height: 75rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -316,86 +344,99 @@ main {
     padding-top: 6rem;
     padding-bottom: 4rem;
     width: 100%;
-
+    padding: 0 0.5rem;
 }
-#mainBox04Part1{
+
+#mainBox04Part1 {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 4rem;
 }
-#mainBox04Part1Left p{
+
+#mainBox04Part1Left p {
     font-size: 3.5rem;
     font-weight: 600;
     display: inline;
 }
-#mainBox04Part1Left h6{
+
+#mainBox04Part1Left h6 {
     font-size: 3.5rem;
     font-weight: 600;
     display: inline;
     color: var(--primary-color);
 
 }
-#mainBox04Part1Right h6{
+
+#mainBox04Part1Right h6 {
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-#mainBox04Part2{
-    overflow: hidden; 
-    height: 700px;
-    width: 100vw;
+#mainBox04Part2 {
+    max-width: 1240px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    height: auto;
     white-space: nowrap;
     display: flex;
     align-items: center;
-    margin-left: calc(-50vw + 620px);
 }
+
 #mainBox04Part2container {
     width: max-content;
-    flex-wrap: nowrap;  
+    flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     animation: move-left 40s linear infinite;
     justify-content: center;
 }
-    
-.mainBox04Part2containerElement{
-    flex: 0 0 auto; 
+
+.mainBox04Part2containerElement {
+    flex: 0 0 auto;
 }
 
 .mainBox04Part2containerElement img {
     border-radius: 1rem;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
-.insaanimageup{
+
+.insaanimageup {
     position: relative;
     transform: translateY(-25px);
-    
+
 }
-.insaanimagedown{
+
+.insaanimagedown {
     position: relative;
     transform: translateY(25px);
 
 }
-#mainBox04Part3{
+
+#mainBox04Part3 {
     display: flex;
     flex-direction: row;
     background-color: #fdf1e9;
     padding: 1rem;
-    gap:1rem;
+    gap: 1rem;
     border: 1px solid rgba(233, 105, 12, 0.18);
     border-radius: 0.2rem;
 }
-#mainBox04Part3 p{
+
+#mainBox04Part3 p {
     font-size: 0.77rem;
     color: gray;
     padding-bottom: 1rem;
     font-weight: 400;
 }
+
 #mainBox04Support {
     border: 1px solid var(--primary-color);
     border-radius: 6px;
@@ -404,11 +445,13 @@ main {
     color: var(--primary-color);
     font-size: 0.8rem;
 }
-#mainBox04Support:hover{
+
+#mainBox04Support:hover {
     background-color: #ede1d9;
 }
 
-#mainBox05{
+/* ------------------------------------------------------------------------------------------------------------------------- */
+#mainBox05 {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -422,7 +465,218 @@ main {
     margin-bottom: 4rem;
     width: 100%;
 }
-#mainBox05Upper h4{
+
+#mainBox05Upper h4 {
     font-size: 3rem;
     font-weight: 600;
+}
+@media ((max-width:1000px)) {
+    #mainBox05Upper h4 {
+    font-size: 2.8rem;
+}
+     #mainBox04Part1Left p {
+        font-size: 3rem;
+    }
+
+    #mainBox04Part1Left h6 {
+        font-size: 3rem;
+    }
+
+    #mainBox04Part1Right h6 {
+        font-size: 1rem;
+    }
+
+    .mainBox04Part2containerElement {
+        width: 30%;
+        height: 30%;
+    }
+    #mainBox03UpperHalf h5 {
+        color: #009e5c;
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+
+    #mainBox03UpperHalf h6 {
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+
+    .mainBox03LowerHalfCard p {
+        font-size: 1rem;
+    }
+
+    .mainBox03LowerHalfCard h5 {
+        font-size: 1.35rem;
+    }
+
+    .mainBox03LowerHalfCard h5 p {
+        font-size: 1.35rem;
+    }
+
+    .mainBox02AnchorPageHolder {
+        display: none;
+    }
+
+    .mainBox1heading h1,
+    .mainBox1heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .mainBox1heading span {
+        font-size: 2.5rem;
+    }
+
+    .mainBox1Para,
+    .Box1Para {
+        font-size: 14px;
+    }
+
+    #mainBox1ClickBox {
+        gap: 1rem;
+    }
+
+    #mainBox1clickBoxLeft {
+        gap: 1rem;
+    }
+
+    #mainBox1clickBoxRight {
+        gap: 1rem;
+    }
+
+}
+
+@media ((max-width:768px)) {
+     #mainBox05Upper h4 {
+    font-size: 2.5rem;
+}
+     #mainBox04Part1Left p {
+        font-size: 2.5rem;
+    }
+
+    #mainBox04Part1Left h6 {
+        font-size: 2.5rem;
+    }
+
+    #mainBox04Part2container {
+        gap: 1rem;
+    }
+
+    .mainBox04Part2containerElement {
+        width: 25%;
+        height: 25%;
+    }
+
+    .insaanimageup {
+        transform: translateY(-10px);
+    }
+
+    .insaanimagedown {
+        transform: translateY(10px);
+    }
+     #mainBox04Part3 {
+    padding: 0.5rem;
+    gap: 1rem;
+     }
+    #mainBox03UpperHalf h5 {
+        color: #009e5c;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    #mainBox03UpperHalf h6 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .mainBox03LowerHalfCard p {
+        font-size: 0.75rem;
+    }
+
+    .mainBox03LowerHalfCard h5 {
+        font-size: 1rem;
+    }
+
+    .mainBox03LowerHalfCard h5 p {
+        font-size: 1rem;
+    }
+
+    .mainBox1heading h1 {
+        font-size: 2rem;
+    }
+
+    .mainBox1heading h2 {
+        font-size: 2rem;
+    }
+
+    .mainBox1heading span {
+        font-size: 2rem;
+    }
+
+    #mainBox1ClickBox {
+        gap: 1.5rem;
+
+    }
+
+    #mainBox1clickBoxLeft {
+        gap: 1.5rem;
+    }
+
+    #mainBox1ClickBox {
+        display: none;
+    }
+
+    #mainBox1 {
+        height: 20rem;
+    }
+}
+
+@media ((max-width:500px)) {
+     #mainBox05Upper h4 {
+    font-size: 2rem;
+}
+     #mainBox04Part1Left p {
+        font-size: 2rem;
+    }
+
+    #mainBox04Part1Left h6 {
+        font-size: 2rem;
+    }
+    #mainBox03UpperHalf h5 {
+        color: #009e5c;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #mainBox03UpperHalf h6 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+#mainBox1 {
+    
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    height: 20vh;
+}
+    .mainBox1heading h1,
+    .mainBox1heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .mainBox1heading span {
+        font-size: 1.5rem;
+    }
+
+    #mainBox1ClickBox {
+        gap: 1rem;
+
+    }
+
+    #mainBox1clickBoxLeft {
+        gap: 1rem;
+    }
+
+    #mainBox1clickBoxRight {
+        gap: 1rem;
+    }
+
 }

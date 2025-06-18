@@ -48,7 +48,7 @@ const AsideBlock03 = () => {
             <p>Turbo UPI</p>
             <div id="headingColorSmall">
               <h3>
-                Experience a 5X faster checkout,</h3>
+                Experience a 5X faster checkout, </h3>
                 <h2>achieve a 10% success rate boost, all without any redirections to UPI apps.</h2>
               
             </div>

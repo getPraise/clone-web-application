@@ -1,14 +1,14 @@
-aside{
-    width: 100vw;
+aside {
+    width: 100%;
     background-color: white;
-    min-height: 50vh;
+    height: auto;
 }
 
-#asideBlock01{
+#asideBlock01 {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    height: 22rem;
+    height: auto;
     padding-top: 6rem;
     padding-bottom: 4rem;
     text-align: left;
@@ -16,49 +16,58 @@ aside{
     align-content: start;
     gap: 1.5rem;
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 0.5rem;
+
 }
-#asideBlock01left{
+
+#asideBlock01left {
     display: flex;
     flex-direction: column;
 }
-#asideBlock01left h1{
-    font-size: 3.5rem;
+
+#asideBlock01left h1 {
+    font-size: 3rem;
     font-weight: 600;
     align-self: flex-start;
     padding-left: 4rem;
 }
 
-#asideBlock01right{
+#asideBlock01right {
     display: flex;
     flex-direction: row;
     padding-right: 4rem;
-    gap:3rem;
-    max-width: 30%;
+    gap: 3rem;
+    max-width: 40%;
     position: relative;
     height: 3.2rem;
     overflow: hidden;
 }
-.asideBlock01Iconlist01{
-    animation: downAnimation1 2s linear 0.5s infinite alternate ;
-    height: 5rem;
+
+.asideBlock01Iconlist01 {
+    animation: downAnimation1 2s linear 0.5s infinite alternate;
+    height: auto;
     width: 25%;
 }
-.asideBlock01Iconlist02{
-    animation: downAnimation2 2.2s linear 0.2s infinite alternate ;
+
+.asideBlock01Iconlist02 {
+    animation: downAnimation2 2.2s linear 0.2s infinite alternate;
 
 }
-.asideBlock01Iconlist03{
-    animation: downAnimation1 2.4s linear 0.7s infinite alternate ;
+
+.asideBlock01Iconlist03 {
+    animation: downAnimation1 2.4s linear 0.7s infinite alternate;
 
 }
-.asideBlock01Iconlist04{
-    animation: downAnimation2 2.2s linear 0.5s infinite alternate ;
+
+.asideBlock01Iconlist04 {
+    animation: downAnimation2 2.2s linear 0.5s infinite alternate;
 
 }
-.asideBlock01Iconlist05{
-    animation: downAnimation3 4s linear 0.7s infinite alternate ;
+
+.asideBlock01Iconlist05 {
+    animation: downAnimation3 4s linear 0.7s infinite alternate;
 
 }
 
@@ -66,32 +75,36 @@ aside{
     0% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(-100px);
     }
 
 }
+
 @keyframes downAnimation2 {
     0% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(-272px);
     }
 
 }
+
 @keyframes downAnimation3 {
     0% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(-358px);
     }
 
 }
 
-
-#asideBlock02{
+#asideBlock02 {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -99,13 +112,15 @@ aside{
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    height: 40rem;
+    height: auto;
     gap: 1.5rem;
     padding-top: 3.8rem;
     padding-bottom: 4rem;
+    padding: 0 0.5rem;
 
 }
-.asideBlock02AnchorPageHolder{
+
+.asideBlock02AnchorPageHolder {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -113,54 +128,62 @@ aside{
     align-self: flex-start;
     padding-left: 4rem;
 }
-#asideBlock02BackgroundBlock{
-    width: 1240px;
+
+#asideBlock02BackgroundBlock {
+    width: 100%;
     height: 524px;
     background: url("images/backgroundAside.avif");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3rem;
 }
-#asideBlock02BackgroundBlockQuantant{
+
+#asideBlock02BackgroundBlockQuantant {
     width: 560px;
     height: 432px;
     background-color: white;
     padding: 2rem;
     text-align: start;
 }
-#asideBlock02BackgroundBlockHeading1{
+
+#asideBlock02BackgroundBlockHeading1 {
     font-size: 2.8rem;
     font-weight: 500;
 }
-#asideBlock02BackgroundBlockHeading2{
+
+#asideBlock02BackgroundBlockHeading2 {
     font-size: 2.8rem;
     font-weight: 500;
     color: #009e5c;
 }
-#asideBlock02BackgroundBlockPara{
+
+#asideBlock02BackgroundBlockPara {
     padding-top: 1rem;
     padding-bottom: 2rem;
     color: var(--gray);
 }
-#asideBlock02BackgroundBlockCompanyList{
+
+#asideBlock02BackgroundBlockCompanyList {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
-#asideBlock02BackgroundBlockButton{
+
+#asideBlock02BackgroundBlockButton {
     border-radius: 6px;
     background-color: var(--primary-color);
     padding: 13.5px 19px 13.5px 19px;
     color: white;
     font-size: 0.9rem;
 }
+
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#asideBlock03{
+#asideBlock03 {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    height: 54rem;
+    height: auto;
     padding-top: 6rem;
     padding-bottom: 4rem;
     text-align: left;
@@ -168,177 +191,180 @@ aside{
     align-content: start;
     gap: 1.5rem;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 0 0.5rem;
+
 }
-#asideBlock03Heading{
+
+#asideBlock03Heading {
     padding-top: 3rem;
     font-size: 2.5rem;
     font-weight: 600;
 }
-#asideBlock03Section1 h4{
-    font-size: 1.1rem;
-    color: var(--gray);
-    padding-top: 3.8rem;
 
-}
-#asideBlock03Section1 p{
-    font-size: 1.2rem;
-    color: var(--gray);
-    padding-bottom: 1rem;
-}
-#asideBlock03ColumnContainerWrapper{
+#asideBlock03ColumnContainerWrapper {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-#asideBlock03ColumnContainer{
+
+#asideBlock03ColumnContainer {
     display: flex;
     transition: transform 0.5s ease-in-out;
     flex-direction: row;
     gap: 2rem;
     width: 300%;
 }
-.asideblock03large{
-    width: 848px;
-    height: 554px;
+
+.asideblock03large,
+.asideblock03small {
+    height: auto;
     background-color: white;
     padding: 1.5rem;
     box-shadow: 0 2px 4px -2px #1326440f, 0 4px 8px -2px #1326441a;
 }
-#headingColor h2{
-    font-size: 3rem;
-    font-weight: 600;
-    display: inline;
 
-}
-#headingColor h3{
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    display: inline;
-
-
-}
-.asideBlock03CardBottom{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    gap: 2rem;
-    padding-top: 1rem;
-}
-.asideblock03signUpNowButton{
-    border-radius: 6px;
-    background-color: #305eff;
-    padding: 13.5px 19px 13.5px 19px;
-    color: white;
-    font-size: 0.8rem;
-    text-decoration: none;
-}
-.asideBlock03knowMore{    
-    padding: 13.5px 19px 13.5px 19px;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-.asideBlock03knowMore a{
-    color: var(--primary-color);
-
+.asideblock03large {
+    max-width: 800px;
 }
 
-.asideblock03small{
-    width: 312px;
-    height: 554px;
-    background-color: white;
-    padding: 1.5rem;    
-    box-shadow: 0 2px 4px -2px #1326440f, 0 4px 8px -2px #1326441a;
+.asideblock03small {
+    max-width: 360px;
 }
-#headingColorSmall h2{
-    font-size: 1.5rem;
-    font-weight: 600;
-    display: inline;
-}
-#headingColorSmall h3{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    display: inline;
-}
-#asideBlock03Section2 p, #asideBlock03Section6 p{
-    font-size: 1.2rem;
-    color: var(--gray);
-    padding-bottom: 1rem;
-}
-#asideBlock03Section2 h4 ,#asideBlock03Section6 h4{
+
+/*for h4 heading Receive international wire transfers with ease with a smart account*/
+.asideblock03small h4,
+.asideblock03large h4 {
     font-size: 1.1rem;
     color: var(--gray);
+    padding-bottom: 1rem;
+
+}
+
+#asideBlock03Section1 h4 {
     padding-top: 7.6rem;
-    padding-bottom: 1rem;
+}
 
+#asideBlock03Section2 h4 {
+
+    padding-top: 12.5rem;
 }
-.asideBlock03CardBottomsmall{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    
+
+#asideBlock03Section3 h4 {
+
+    padding-top: 11rem;
 }
-.asideblock03signUpNowButtonsmall{
+
+#asideBlock03Section5 h4,
+#asideBlock03Section4 h4 {
+    padding-top: 7.6rem;
+}
+
+#asideBlock03Section6 h4 {
+
+    padding-top: 7.6rem;
+}
+
+/* -----------over-------- */
+
+/* p like MoneySaver Export Account  */
+.asideblock03small p,
+.asideblock03large p {
+    font-size: 1.2rem;
+    color: var(--gray);
+    padding-bottom: 1rem;
+}
+
+/* ---------over-------------- */
+
+/* heading like open a virtual account in 200+ countries */
+#headingColor h2,
+#headingColor h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    display: inline;
+}
+
+#headingColor h3 {
+    color: var(--primary-color);
+}
+
+#headingColorSmall h2,
+#headingColorSmall h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline;
+}
+
+#headingColorSmall h3 {
+    color: var(--primary-color);
+}
+
+/*  ---------------over----------------------  */
+
+.asideblock03signUpNowButton,
+.asideblock03signUpNowButtonsmall {
     border-radius: 6px;
     background-color: #305eff;
-    padding: 13.5px 19px 13.5px 19px;
     color: white;
     font-size: 0.8rem;
     text-decoration: none;
 }
-.asideBlock03knowMoresmall{    
-    padding: 13.5px 19px 13.5px 19px;
+
+.asideblock03signUpNowButton,
+.asideblock03signUpNowButtonsmall {
+    padding: 10.5px 19px 10.5px 19px;
+}
+
+.asideBlock03knowMore,
+.asideBlock03knowMoresmall {
     font-size: 0.8rem;
     font-weight: 700;
 }
-.asideBlock03knowMoresmall a{
+
+.asideBlock03knowMore {
+    padding: 10.5px 19px 10.5px 19px;
+}
+
+.asideBlock03knowMoresmall {
+    padding: 13.5px 19px 13.5px 19px;
+}
+
+
+.asideBlock03knowMore a,
+.asideBlock03knowMoresmall a {
     color: var(--primary-color);
+}
 
+/* dono button ke bich ki baat */
+.asideBlock03CardBottom,
+.asideBlock03CardBottomsmall {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 2rem;
 }
-#asideBlock03Section3 p{
-    font-size: 1.2rem;
-    color: var(--gray);
-    padding-bottom: 1rem;
-}
-#asideBlock03Section3 h4{
-    font-size: 1.1rem;
-    color: var(--gray);
-    padding-top: 9.5rem;
-    padding-bottom: 1rem;
 
-}
-#asideBlock03Section4 h4, #asideBlock03Section5 h4{
-    font-size: 1.1rem;
-    color: var(--gray);
-    padding-top: 7rem;
-
-}
-#asideBlock03Section4 p, #asideBlock03Section5 p{
-    font-size: 1.2rem;
-    color: var(--gray);
-    padding-bottom: 1rem;
-}
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
-#asideBlock04{
+#asideBlock04 {
     background-color: var(--background-color2);
     margin-left: auto;
     margin-right: auto;
-    height: 75rem;
+    height: auto;
     padding-top: 1rem;
     padding-bottom: 4rem;
     text-align: left;
     align-items: start;
     align-content: start;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: start;
     width: 100%;
 
 }
-#asideBlock04Part1{
+
+#asideBlock04Part1 {
     width: 100%;
     height: 7rem;
     background-color: var(--background-color3);
@@ -350,14 +376,16 @@ aside{
 
 
 }
-#asideBlock04Part1Container{
+
+#asideBlock04Part1Container {
     width: 100%;
     display: flex;
     gap: 4rem;
     animation: move-left 40s linear infinite;
     width: max-content;
 }
-.asideBlock04Part1Element{
+
+.asideBlock04Part1Element {
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -371,148 +399,172 @@ aside{
         transform: translateX(-50%);
     }
 }
-#asideBlock04Part2{
+
+#asideBlock04Part2 {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    height: 40rem;
+    height: auto;
     padding-top: 6rem;
     padding-bottom: 4rem;
     text-align: left;
     align-items: start;
     align-content: start;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
 }
-#asideBlock04Part2Heading1{
-    font-size: 3.9rem;
+
+#asideBlock04Part2Heading1 {
+    font-size: 3.5rem;
     font-weight: 600;
     color: white;
 }
-#asideBlock04Part2Heading1 h2{
-    font-size: 3.9rem;
+
+#asideBlock04Part2Heading1 h2 {
+    font-size: 3.5rem;
     font-weight: 600;
     color: #009e5c;
 }
-#asideBlock04Part2Container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+
+#asideBlock04Part2Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    width: 90%;
     gap: 10rem;
-    height: 15rem;
+    height: auto;
 }
-.asideBlock04Part2ContainerItems{
+
+.asideBlock04Part2ContainerItems {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 12rem;
 }
-.asideBlock04Part2ContainerHeading{
+
+.asideBlock04Part2ContainerHeading {
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
 
 }
-.asideBlock04Part2ContainerPara{
+
+.asideBlock04Part2ContainerPara {
     color: #7b8f9a;
     font-weight: 400;
 
 }
-.asideBlock04Part2ContainerDocs a{
+
+.asideBlock04Part2ContainerDocs a {
     color: white;
     font-size: 1.05rem;
 
 }
-.asideBlock04Part2ContainerDocs a:hover{
-    border-width : 0px 0px  1px 0px ;
+
+.asideBlock04Part2ContainerDocs a:hover {
+    border-width: 0px 0px 1px 0px;
     border-radius: 2px;
     border-style: solid;
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding-bottom: 0.1rem;
 }
-.asideBlock04Icon{
+
+.asideBlock04Icon {
     color: white;
     transform: scale(1.5, 1.5);
 }
 
 
-#asideBlock04Part3{
+#asideBlock04Part3 {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    height: 40rem;
+    height: auto;
     padding-bottom: 4rem;
     text-align: start;
     align-items: start;
     align-content: start;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
 }
-#asideBlock04Part3Content{
+
+#asideBlock04Part3Content {
     width: 100%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    gap: 16.85rem;
+    gap:inherit;
 }
-#asideBlock04Part3Heading{
+
+#asideBlock04Part3Heading {
     text-align: start;
     display: flex;
     flex-direction: column;
 }
-#asideBlock04Part3Heading h5{
+
+#asideBlock04Part3Heading h5 {
     color: white;
     font-size: 2rem;
     font-weight: 600;
 }
-#asideBlock04Part3CImageCover{
+
+#asideBlock04Part3CImageCover {
     border-radius: 1rem;
-    width: 782px;
-    height: 392px;
+    width:830px;
+    height:420px;
     overflow: hidden;
-    border-color: rgba(121, 135, 156, 0.09);
+    border: 1px solid rgba(121, 135, 156, 0.09);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
-    
+
 }
-#asideBlock04Part3Image{
+
+#asideBlock04Part3Image {
     width: 100%;
     height: 100%;
     background-image: url("images/covercode.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     transition: filter 0.3s ease-in-out;
     filter: brightness(110%) contrast(100%) saturate(120%);
 
 
 }
+
 #asideBlock04Part3CImageCover:hover #asideBlock04Part3Image {
     border-radius: 1rem;
     filter: brightness(100%) contrast(100%) saturate(120%);
-    background-image: linear-gradient(to top, #032a3e, #032a3e4e), 
-    url("images/covercode.png");
+    background-image: linear-gradient(to top, #032a3e, #032a3e4e),
+        url("images/covercode.png");
 }
-.asideBlock04Icon03{
+
+.asideBlock04Icon03 {
     color: white;
     transform: scale(1.5, 1.5);
     text-align: center;
 }
-.asideBlock04Part3signUpNow{
+
+.asideBlock04Part3signUpNow {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
 #asideBlock04Part3CImageCover:hover .asideBlock04Part3signUpNow {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1); /* Slight zoom effect */
+    transform: translate(-50%, -50%) scale(1.1);
+    /* Slight zoom effect */
 }
+
 .asideBlock04Part3signUpNow a button {
     border-radius: 6px;
     background-color: var(--primary-color);
@@ -523,4 +575,259 @@ aside{
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+}
+
+
+
+@media ((max-width:1000px)) {
+
+    #asideBlock04Part2Heading1 {
+    font-size: 2.5rem;
+}
+
+#asideBlock04Part2Heading1 h2 {
+    font-size: 2.5rem;
+}
+
+#asideBlock04Part3Content {
+    flex-direction: column;
+}
+    #asideBlock01 {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #asideBlock01left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #asideBlock01left h1 {
+        font-size: 2.5rem;
+    }
+
+    #asideBlock01right {
+        padding-left: 4rem;
+        gap: 2rem;
+        max-width: 90%;
+        height: 3.2rem;
+    }
+
+    #asideBlock03Heading {
+        font-size: 2rem;
+    }
+
+    .asideblock03large {
+        max-width: 75%;
+    }
+
+    .asideblock03small {
+        max-width: 25%;
+    }
+
+    #asideBlock03Section1 h4 {
+        padding-top: 7.6rem;
+    }
+
+    #asideBlock03Section2 h4 {
+
+        padding-top: 9.5rem;
+    }
+
+    #asideBlock03Section3 h4 {
+
+        padding-top: 8rem;
+    }
+
+    .asideblock03small p,
+    .asideblock03large p {
+        font-size: 1rem;
+    }
+
+    #headingColor h2,
+    #headingColor h3 {
+        font-size: 1.8rem;
+    }
+
+    #headingColorSmall h2,
+    #headingColorSmall h3 {
+        font-size: 1.5rem;
+    }
+
+    .asideblock03small h4,
+    .asideblock03large h4 {
+        font-size: 0.85rem;
+    }
+
+    .asideblock03signUpNowButton,
+    .asideblock03signUpNowButtonsmall {
+        padding: 10.5px 19px 10.5px 19px;
+    }
+
+    .asideBlock03knowMore,
+    .asideBlock03knowMoresmall {
+        display: none;
+    }
+
+    #asideBlock04Part3CImageCover {
+    width:700px;
+    height:350px;
+
+}
+}
+@media ((max-width:700px)) {
+    #asideBlock02{
+        display: none;
+    }
+}
+@media ((max-width:768px)) {
+    #asideBlock04Part3Heading h5 {
+    font-size: 1rem;
+}
+
+     #asideBlock04Part3CImageCover {
+    width:400px;
+    height:280px;
+
+}
+       #asideBlock04Part2Heading1 {
+    font-size: 2rem;
+}
+
+#asideBlock04Part2Heading1 h2 {
+    font-size: 2rem;
+}
+
+    #asideBlock01right ,
+    #asideBlock01left h1 {
+        padding-left: 2rem;
+    }
+    #asideBlock01left h1 {
+        font-size: 2.2rem;
+    }
+
+    #asideBlock01right {
+        height: 2rem;
+    }
+
+    #asideBlock03Heading {
+        font-size: 1.5rem;
+    }
+
+    .asideblock03large {
+        max-width: 70%;
+    }
+
+    .asideblock03small {
+        max-width: 30%;
+    }
+
+    .asideblock03small p,
+    .asideblock03large p {
+        font-size: 0.5rem;
+    }
+
+    #headingColor h2,
+    #headingColor h3 {
+        font-size: 1.5rem;
+    }
+
+    #headingColorSmall h2,
+    #headingColorSmall h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media ((max-width:600px)) {
+    #asideBlock01 {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        height: 15rem;
+    }
+    #asideBlock04Part2Container {
+    gap: 1rem;
+}
+       #asideBlock04Part2Heading1 {
+    font-size: 1.5rem;
+}
+
+#asideBlock04Part2Heading1 h2 {
+    font-size: 1.5rem;
+}
+    #asideBlock01right {
+        padding-left: 0rem;
+    }
+    #asideBlock01left h1 {
+        font-size: 1.8rem;
+        padding-left: 0rem;
+
+    }
+
+    #asideBlock03Heading {
+        font-size: 1rem;
+    }
+
+    .asideblock03large {
+        max-width: 60%;
+    }
+
+    .asideblock03small {
+        max-width: 40%;
+    }
+
+    #asideBlock03Section1 h4 {
+        padding-top: 7.6rem;
+    }
+
+    #asideBlock03Section2 h4 {
+
+        padding-top: 7rem;
+    }
+
+    #asideBlock03Section3 h4 {
+
+        padding-top: 4rem;
+    }
+
+    #asideBlock03Section5 h4 {
+
+        padding-top: 10rem;
+    }
+
+    .asideblock03small p,
+    .asideblock03large p {
+        font-size: 0.85rem;
+    }
+
+    .asideblock03small h4,
+    .asideblock03large h4 {
+        font-size: 0.75rem;
+    }
+
+    #headingColor h2,
+    #headingColor h3 {
+        font-size: 1rem;
+    }
+
+    #headingColorSmall h2,
+    #headingColorSmall h3 {
+        font-size: 0.75rem;
+    }
+
+    .asideblock03signUpNowButtonsmall {
+        padding: 8px 12px;
+    }
+
+    #asideBlock03ColumnContainer {
+        gap: 1rem;
+    }
+    #asideBlock04Part3CImageCover {
+    width: 80vw;
+    height: 25vh;
+
+}
 }

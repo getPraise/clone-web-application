@@ -1,10 +1,13 @@
-import React, { useState } from "react"; import "./SignUp.css";
+import React, { useState } from "react"; 
+import "./SignUp.css";
 import { Link } from 'react-router-dom';
 
 const SignUpLeft = () => {
 
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
+  const [isSubmitting, setSubmitting] = useState(false);
+  const [success , setSuccess] =useState(false);
 
   const validateEmail = (email) => {
     const re = /\S+@\S+\.\S+/;
@@ -13,14 +16,27 @@ const SignUpLeft = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if( isSubmitting) return;
+    setSubmitting(true);
+
     if (!email.trim()) {
       setError("Email is required.");
+      setSubmitting(false);
+      return;
     } else if (!validateEmail(email)) {
       setError("Please enter a valid business email.");
-    } else {
+      setSubmitting(false);
+      return;
+    } 
       setError("");
       console.log("Form is valid, submit data:", email);
-    }
+
+      setTimeout(() =>{
+        setSubmitting(false);
+        setSuccess(false);
+        setEmail("");
+      }, 1000)
   };
 
 
@@ -36,19 +52,26 @@ const SignUpLeft = () => {
               <input
                 type="text"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setError("");
+                  setSuccess(false);
+                }}
                 placeholder="E.g. name@company.com"
-                className={`inputFull placeholderText ${error ? "inputError" : ""}`}              />
+                className={`inputFull placeholderText ${error ? "inputError" : ""}`} 
+              />
               {error && <p className="errorText">{error}</p>}
 
-              {!error && (
+              {!error && !success && (
                 <label className="label2">
                 Use your business email address for signup.
               </label>
               )}
             </div>
 
-            <button className="inputFull inputButton">Get Started</button>
+            <button className="inputFull inputButton" type="submit" disable={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "Get Started"}
+              </button>
           </form>
 
           <div className="line-with-or"><span>OR</span></div>

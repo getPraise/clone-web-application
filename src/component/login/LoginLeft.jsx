@@ -1,31 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch , useSelector } from "react-redux";
+import { setInput , setError} from "../../redux/slices/authSlice";
+import { useNavigate ,Link } from "react-router-dom";
+
 import iosstore from "../../assets/images/login/iosstore.svg";
 import playstore from "../../assets/images/login/playstore.svg";
 import "./Login.css";
-import { Link } from 'react-router-dom';
+
 const Login = () => {
-  const [input, setInput] = useState("");
-  const [error, setError] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const input = useSelector((state) => state.auth.input);
+  const error = useSelector((state) => state.auth.error);
 
-  const isValidEmail = (value) => {
-    const re = /^\S+@\S+\.\S+$/;
-    return re.test(value);
-  };
+  const isValidEmail = (value) => /^\S+@\S+\.\S+$/.test(value);
 
-  const isValidMobile = (value) => {
-    const re = /^[6-9]\d{9}$/;
-    return re.test(value);
-  };
-  const handleSubmit = (e) => {
+  const isValidMobile = (value) => /^[6-9]\d{9}$/.test(value);
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+
+    const handleSubmit = (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
+    
+    setIsSubmitting(true);
 
     if (!input.trim()) {
-      setError("This field is required.");
+      dispatch(setError("This field is required."));
+      setIsSubmitting(false);
     } else if (!isValidEmail(input) && !isValidMobile(input)) {
-      setError("Please enter a valid email or 10-digit mobile number.");
+      dispatch(setError("Please enter a valid email or 10-digit mobile number."));
+      setIsSubmitting(false);
     } else {
-      setError("");
+      dispatch(setError(""));
       console.log("Form is valid, submit data:", input);
+      setTimeout(() => {
+      setIsSubmitting(false);
+      navigate("/dashboard");
+    }, 1000);
     }
   };
 
@@ -40,14 +51,16 @@ const Login = () => {
               <input
                 type="text"
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
+                onChange={(e) => dispatch(setInput(e.target.value))}
                 placeholder="Enter your email Id or mobile number"
                 className={`inputFull placeholderText ${error ? "inputError" : ""}`}
                 />
                 {error && <p className="errorText">{error}</p>}
             </div>
 
-            <button type="submit" className="inputFull inputButton">Next</button>
+            <button type="submit" className="inputFull inputButton" disabled={isSubmitting} style={{ opacity: isSubmitting ? 0.6 : 1, cursor: isSubmitting ? "not-allowed" : "pointer" }}>
+            {isSubmitting ? "Submitting..." : "Next"}
+</button>
 
             <div className="line-with-or"><span>OR</span></div>
 
@@ -55,7 +68,9 @@ const Login = () => {
               Login with Google
             </button>
             <label className="label2">
-              Get RazorpayX mobile <img src={iosstore} alt="ios store" className="iconapp" /><img src={playstore} alt="play store" className="iconapp" />
+              Get RazorpayX mobile 
+              <img src={iosstore} alt="ios store" className="iconapp" />
+              <img src={playstore} alt="play store" className="iconapp"/>
             </label>
             <div className="line-with-or"></div>
           </form>

@@ -59,21 +59,21 @@ const Header = () => {
               <img src={logoIcon} id="logo" alt="Razorpay Logo" />
             </a>
           </div>
-          <div className="navItems navItemsBorder" id="Payments"><a href="#payment">Payments</a></div>
-          <div className="navItems navItemsBorder" id="Banking"><a href="#banking">Banking+</a></div>
-          <div className="navItems" id="CoporateCard"><a href="#coporateCard">Coporate Card</a></div>
-          <div className="navItems navItemsBorder" id="Payroll"><a href="#payroll">Payroll</a></div>
-          <div className="navItems navItemsBorder" id="Resources"><a href="#resources">Resources</a></div>
-          <div className="navItems" id="Pricing"><a href="#pricing">Pricing</a></div>
+          <div className="navItems navItemsBorder  hide-on-small" id="Payments"><a href="#payment">Payments</a></div>
+          <div className="navItems navItemsBorder  hide-on-small" id="Banking"><a href="#banking">Banking+</a></div>
+          <div className="navItems hide-on-small" id="CoporateCard"><a href="#coporateCard">Coporate Card</a></div>
+          <div className="navItems navItemsBorder  hide-on-small" id="Payroll"><a href="#payroll">Payroll</a></div>
+          <div className="navItems navItemsBorder  hide-on-small" id="Resources"><a href="#resources">Resources</a></div>
+          <div className="navItems  hide-on-small" id="Pricing"><a href="#pricing">Pricing</a></div>
         </div>
 
         <div id="navLowerHalf">
-          <div className="navItems" id="Support">
+          <div className="navItems hide-on-small" id="Support">
             <a href="#support">
               <FontAwesomeIcon icon={faHeadphonesSimple} style={{ color: '#2d2e2f', fontSize: '24px' }} />
             </a>
           </div>
-          <div className="navItems" id="Country">
+          <div className="navItems hide-on-small" id="Country">
             <select name="country" id="navCountry">
               <option value="--Select--">Flag</option>
               <option value="India">India</option>
@@ -88,7 +88,7 @@ const Header = () => {
               <button id="navLogin">Login</button>
             </Link>
           </div>
-          <div className="navItems" id="SignUp">
+          <div className="navItems hide-on-small" id="SignUp">
             <Link to="/signUp">
               <button id="navSignUp">
                 Sign Up
@@ -101,7 +101,7 @@ const Header = () => {
 
       {/* SLIDER SECTION 1 */}
       <div id="slideWrapperHeader">
-        <button id="prevBtn" className="navButton">❮</button>
+        <button id="prevBtn" className="navButton ">❮</button>
         <div id="slideContainer">
           {slides.map((img, index) => {
             const headings = [

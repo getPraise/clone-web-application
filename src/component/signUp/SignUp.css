@@ -7,7 +7,7 @@
 }
 
 .signUpPageLeft {
-  width: 33.5%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -326,44 +326,44 @@
 }
 
 @media (max-width: 768px) {
-  .loginPageRight {
+  .signUpPageRight {
     display: none;
   }
 }
 
 @media (max-width: 1200px) and (min-width: 769px) {
-  .loginPageLeft {
+  .signUpPageLeft {
     padding: 1rem 1.5rem;
   }
 
-  .loginPageLeftUpper {
+  .signUpPageLeftUpper {
     gap: 1rem;
   }
 
-  .loginPageLeftLower {
+  .signUpPageLeftLower {
     padding-top: 5px;
     max-width: 280px;
   }
 }
 
 @media (max-width: 1024px) {
-  .loginPageLeft {
+  .signUpPageLeft {
     padding: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .loginPageLeft {
+  .signUpPageLeft {
     width: 100%;
     padding: 1rem;
   }
-  .loginPageRight {
+  .signUpPageRight {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .loginPageLeft {
+  .signUpPageLeft {
     padding: 1.5rem 2rem;
   }
 }
