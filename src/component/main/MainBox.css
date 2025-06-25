@@ -147,6 +147,7 @@ main {
     border-radius: 2px;
     overflow: hidden;
     position: relative;
+    max-width: 267px;
 }
 
 .mainBox02CardUpper {
