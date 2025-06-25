@@ -15,8 +15,8 @@
 
 main {
     background-color: var(--accent-color);
-    min-height: 235rem;
     height: auto;
+    padding-bottom: 4rem;
 
 }
 
@@ -232,9 +232,7 @@ main {
     background-color: var(--accent-color);
     height: auto;
     gap: 1.5rem;
-    padding-top: 3.8rem;
-    margin-bottom: 4rem;
-    padding: 0 0.5rem;
+    padding: 6rem 0.5rem 4rem 0.5rem;
 
 }
 
@@ -344,7 +342,7 @@ main {
     padding-top: 6rem;
     padding-bottom: 4rem;
     width: 100%;
-    padding: 0 0.5rem;
+    padding: 6rem 0.5rem 4rem 0.5rem;
 }
 
 #mainBox04Part1 {
